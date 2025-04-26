@@ -12,6 +12,7 @@
     "@react-three/drei": "^10.0.5",
     "@react-three/fiber": "^9.1.0",
     "axios": "^1.8.4",
+    "dotenv": "^16.5.0",
     "drei": "^0.0.45",
     "framer-motion": "^12.5.0",
     "mongoose": "^8.13.2",
