@@ -14,7 +14,7 @@ const page = () => {
         category:"Startup",
         author:"Alex Bennett",
         authorImg:"/author_img.png"
-    })
+    });
 
     const onChangeHandler = (event) => {
         const name = event.target.name;
@@ -35,6 +35,14 @@ const page = () => {
         const response = await axios.post('/api/blog', formData)
         if(response.data.success){
             toast.success(response.data.msg)
+            setImage(false);
+            setData({
+                title:"",
+                description:"",
+                category:"Startup",
+                author:"Alex Bennett",
+                authorImg:"/author_img.png"
+            })
         }
         else{
             toast.error("Error");
